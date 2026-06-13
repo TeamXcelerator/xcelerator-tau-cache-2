@@ -1,0 +1,9 @@
+# τ-cache fixtures are binary (deflate-compressed JSON, possibly
+# byte-split). Never apply line-ending normalization or text diffing.
+*.json.zip      binary
+*.zip           binary
+*.zip.part*     binary
+
+# Text files use LF.
+*.md   text eol=lf
+LICENSE text eol=lf
